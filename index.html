@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png"></a>
+        <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Menu</a></li>
+             <li><a href="#">What's new</a></li>
+             <li><a href="#">Contacts</a></li>
+         </ul>
+    </header>
+
+    <div class="content">
+        <div class="textbox" >
+            <h2>It's not just coffee<br> It's <span>Starbucks</span></h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                 ut labore et dolore magna aliqua. Ut enim ad minim veniam<br>
+                 ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                 reprehenderit in voluptate velit esse cillum dolore eu  
+                 id est laborum."</p>
+                 <a href="#">Learn More</a>
+        </div>
+        
+
+       <div class="imgbox">
+        <img src="img/img1.png" class="starbucks" id="starbucks">
+       </div>
+    </div>
+
+    <ul class="thumb">
+    <li><img  src="img/thumb1.png" onclick="imgslider('img/img1.png');changeBgcolor=('#017144')"></li>
+    <li><img src="img/thumb2.png" onclick="imgslider('img/img2.png'); changeBgcolor=('#017144')"></li>
+    <li><img src="img/thumb3.png" onclick="imgslider('img/img3.png')"></li>
+    <li><img src="img/106-1060314_15-most-amazing-starbucks-drinks-around-the-world.png "onclick="imgslider('img/106-1060314_15-most-amazing-starbucks-drinks-around-the-world.png')"></li>
+   
+    </ul>
+
+    <ul class="sci">
+    <li><img src="img/instagram.png"></li>
+    <li><img src="img/facebook.png"></li>
+    <li><img src="img/twitter.png"></li>
+    </ul>
+</section>
+
+
+
+<script type="text/javascript">
+function imgslider(imgsrc){
+    document.querySelector('.starbucks').src = imgsrc;
+}
+
+function changeBgcolor(color) {
+    const circle = document.querySelector('.circle')
+    circle.style.backgroundColor = color;
+}
+</script>
+</body>
+</html>

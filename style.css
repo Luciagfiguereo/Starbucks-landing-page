@@ -1,0 +1,171 @@
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Abril Fatface';
+
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    padding:10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 60px;
+    width:6px;
+}
+
+header ul{
+    display: flex;
+   
+
+}
+
+header ul li{
+    list-style: none;
+   
+}
+ 
+
+header ul li a{
+    display: block;
+    font-weight: 200px;
+    margin-left:60px;
+    text-decoration:none;
+    color: black;
+}
+
+header ul li a:hover{
+    transition: 0.1s;
+    color: #017143;
+}
+
+.content{
+    position: relative;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+    margin: 1rem;
+}
+
+.content .textbox h2{
+    color: #333;
+    font-size: 5em;
+    line-height:1em;
+    font-weight:500;
+}
+
+.content .textbox h2 span{
+    color:#017143;
+    font-size: 1.1em;
+    font-weight:800;
+}
+
+.content .textbox p{
+    color: #333;
+}
+
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding:10px 20px;
+    background:#017143;
+    color: #fff;
+    border-radius:40px;
+    font-weight: 500;
+    letter-spacing:1px;
+    text-decoration: none;
+}
+
+.content .imgbox{
+    max-width: 300px;
+    border-top-left-radius:75px;
+    
+
+}
+
+.thumb{
+    position: absolute;
+    left: 45%;
+    bottom:10px;
+    transform: translateX(-40%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.thumb li:hover{
+transform:translateY(-15px);
+}
+
+.thumb li img{
+max-width: 90px;
+}
+
+ li img.pink{
+    max-width: 120px;
+    }
+
+.sci{
+    position: absolute;
+    top: 50%;
+   left: 96%;
+   display: flex;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+list-style: none;
+}
+
+.sci li img{
+    display: inline-block;
+    margin: 10px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle{
+    position:absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #017143;
+    clip-path: circle(400px at right 800px);
+}
+
